@@ -90,3 +90,14 @@ input[type="email"] {
     opacity: 0;
   }
 }
+
+/* NAV - SCROLL */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Oculta la barra de scroll en navegadores basados en Webkit (Chrome, Safari) */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Oculta la barra de scroll en IE y Edge */
+  scrollbar-width: none;     /* Oculta la barra de scroll en Firefox */
+}

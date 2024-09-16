@@ -191,7 +191,7 @@ function Asidebar({ mobile, isOpen, toggleSidebar }: Props) {
   if (mobile) {
     return (
       <nav
-        className={`fixed inset-0 z-40 flex w-full transform justify-center gap-10 bg-gray-900 p-4 ${
+        className={`fixed  overflow-y-scroll scrollbar-hide z-40 flex w-full transform justify-center gap-10 bg-gray-900 p-4 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300`}
       >
@@ -207,7 +207,7 @@ function Asidebar({ mobile, isOpen, toggleSidebar }: Props) {
 
   return (
     <nav
-      className={`fixed inset-y-0 left-0 z-30 bg-gray-900 text-white transition-all duration-300 ${
+      className={`fixed inset-y-0 overflow-y-scroll scrollbar-hide left-0 z-30 bg-gray-900 text-white transition-all duration-300 ${
         isOpen ? "w-96" : "w-16"
       }`}
     >
